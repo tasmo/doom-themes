@@ -273,7 +273,7 @@
         (anzu-match-1            :background dsky)
         (anzu-match-2            :background dgreen)
         (anzu-match-1            :background dyellow)
-        (anzu-mode-line          :foreground pink :weight bold)
+        (anzu-mode-line          :foreground pink :weight 'bold)
         (anzu-mode-line-no-match :foreground fuchsia)
         ;;;; avy
         (avy-goto-char-timer-face
