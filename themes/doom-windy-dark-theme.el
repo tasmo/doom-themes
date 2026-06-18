@@ -740,6 +740,21 @@
         (rainbow-delimiters-depth-12-face   :foreground lime)
         (rainbow-delimiters-unmatched-face  :weight 'bold :overline fg :inverse-video t)
         (rainbow-delimiters-mismatched-face :foreground warning :overline t)
+        ;;;; ruler
+        (ruler-mode-default
+          :inherit 'default
+          :foreground base3
+          :background modeline-bg
+          :box `(:color ,modeline-bg-inactive :line-width 1 :style nil))
+        (ruler-mode-column-number  :inherit 'ruler-mode-default :foreground fg)
+        (ruler-mode-comment-column :inherit 'ruler-mode-default :foreground orange)
+        (ruler-mode-current-column :inherit 'ruler-mode-default :foreground yellow)
+        (ruler-mode-fill-column    :inherit 'ruler-mode-default :foreground red)
+        (ruler-mode-fringes        :inherit 'ruler-mode-default :foreground green)
+        (ruler-mode-goal-column    :inherit 'ruler-mode-default :foreground red)
+        (ruler-mode-margins        :inherit 'ruler-mode-default :foreground black)
+        (ruler-mode-pad            :inherit 'ruler-mode-default :background base3)
+        (ruler-mode-tab-stop       :inherit 'ruler-mode-default :foreground cyan)
         ;;;; shr
         (shr-code :inherit 'org-code :background bg-alt)
         (shr-h1   :inherit 'outline-1)
